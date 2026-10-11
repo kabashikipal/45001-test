@@ -1110,7 +1110,9 @@ function renderQuestion(){
   nextBtn.classList.remove('show');
   answersWrap.innerHTML = '';
 
-  const letters = ['A','B','C','D','E','F','G','H'];
+  // Same letter sequence the source exam document uses (а, б, с, д, е, ф, ж, ш),
+  // so references like "варианты а, б" line up with the letters shown on screen.
+  const letters = ['А','Б','С','Д','Е','Ф','Ж','Ш'];
   q.options.forEach((opt, idx) => {
     const btn = document.createElement('button');
     btn.className = 'ans-btn';
