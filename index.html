@@ -992,6 +992,21 @@ function shuffle(arr){
   return a;
 }
 
+// Returns a new question object with its answer options in a shuffled order
+// (and `correct` remapped to match), leaving the original QUESTIONS entry untouched.
+function shuffleQuestionOptions(q){
+  const order = shuffle(q.options.map((_, i) => i));
+  return {
+    ...q,
+    options: order.map(i => q.options[i]),
+    correct: order.indexOf(q.correct)
+  };
+}
+
+function buildQuizRun(){
+  return shuffle(QUESTIONS).map(shuffleQuestionOptions);
+}
+
 const hero = document.getElementById('hero');
 const quizSection = document.getElementById('quizSection');
 const resultsSection = document.getElementById('resultsSection');
@@ -1009,7 +1024,7 @@ qTotal.textContent = QUESTIONS.length;
 document.getElementById('totalCount').textContent = QUESTIONS.length;
 
 document.getElementById('startBtn').addEventListener('click', () => {
-  quizQuestions = shuffle(QUESTIONS);
+  quizQuestions = buildQuizRun();
   hero.classList.add('hidden');
   quizSection.classList.remove('hidden');
   renderQuestion();
@@ -1095,7 +1110,7 @@ function showResults(){
 
 document.getElementById('retryBtn').addEventListener('click', () => {
   current = 0; score = 0; answered = [];
-  quizQuestions = shuffle(QUESTIONS);
+  quizQuestions = buildQuizRun();
   resultsSection.classList.add('hidden');
   quizSection.classList.remove('hidden');
   renderQuestion();
