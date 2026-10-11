@@ -1,0 +1,1119 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Тест: СТБ ISO 45001-2020</title>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="ISO 45001">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#15181a">
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#15181a;
+    --card:#1e2225;
+    --card-edge:#2a2f33;
+    --yellow:#f2c14e;
+    --yellow-dim:#a98a2f;
+    --green:#3fa179;
+    --red:#d9534f;
+    --text:#eeece6;
+    --text-dim:#93999e;
+    --stripe:#0f1112;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--bg);
+    color:var(--text);
+    font-family:'Inter',sans-serif;
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding:0 0 60px;
+  }
+
+  /* hazard stripe bar */
+  .hazard-bar{
+    width:100%;
+    height:14px;
+    background:repeating-linear-gradient(
+      135deg,
+      var(--yellow) 0 22px,
+      var(--stripe) 22px 44px
+    );
+    flex-shrink:0;
+  }
+
+  header.hero{
+    width:100%;
+    max-width:920px;
+    padding:56px 24px 40px;
+    text-align:center;
+  }
+  .eyebrow{
+    font-family:'IBM Plex Mono',monospace;
+    letter-spacing:.18em;
+    font-size:.72rem;
+    color:var(--yellow);
+    text-transform:uppercase;
+    margin-bottom:14px;
+  }
+  h1{
+    font-family:'Archivo Black',sans-serif;
+    font-weight:400;
+    font-size:clamp(2rem,5.5vw,3.4rem);
+    line-height:1.05;
+    letter-spacing:-.01em;
+    margin:0 0 18px;
+    text-transform:uppercase;
+  }
+  h1 span{color:var(--yellow);}
+  .lede{
+    color:var(--text-dim);
+    font-size:1.02rem;
+    max-width:640px;
+    margin:0 auto 30px;
+    line-height:1.55;
+  }
+  .meta-row{
+    display:flex;
+    justify-content:center;
+    gap:28px;
+    flex-wrap:wrap;
+    font-family:'IBM Plex Mono',monospace;
+    font-size:.78rem;
+    color:var(--text-dim);
+    margin-bottom:34px;
+  }
+  .meta-row b{color:var(--text);font-weight:500;}
+
+  button.primary{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:.9rem;
+    letter-spacing:.06em;
+    text-transform:uppercase;
+    background:var(--yellow);
+    color:#15181a;
+    border:none;
+    padding:15px 34px;
+    border-radius:2px;
+    cursor:pointer;
+    font-weight:600;
+    transition:transform .12s ease, background .12s ease;
+  }
+  button.primary:hover{background:#ffd772; transform:translateY(-1px);}
+  button.primary:active{transform:translateY(0);}
+
+  main{
+    width:100%;
+    max-width:640px;
+    padding:0 24px;
+    flex:1;
+    display:flex;
+    flex-direction:column;
+  }
+
+  /* progress */
+  .progress-wrap{
+    margin:30px 0 22px;
+  }
+  .progress-track{
+    height:8px;
+    width:100%;
+    background:var(--stripe);
+    border-radius:2px;
+    overflow:hidden;
+    border:1px solid var(--card-edge);
+  }
+  .progress-fill{
+    height:100%;
+    background:repeating-linear-gradient(
+      135deg,
+      var(--yellow) 0 10px,
+      var(--yellow-dim) 10px 20px
+    );
+    width:0%;
+    transition:width .35s ease;
+  }
+  .progress-label{
+    display:flex;
+    justify-content:space-between;
+    font-family:'IBM Plex Mono',monospace;
+    font-size:.72rem;
+    color:var(--text-dim);
+    margin-top:8px;
+    letter-spacing:.04em;
+  }
+  .progress-label b{color:var(--yellow);}
+
+  .card{
+    background:var(--card);
+    border:1px solid var(--card-edge);
+    border-radius:4px;
+    padding:30px 28px 26px;
+  }
+  .q-clause{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:.68rem;
+    color:var(--yellow-dim);
+    letter-spacing:.08em;
+    text-transform:uppercase;
+    margin-bottom:10px;
+  }
+  .q-text{
+    font-size:1.18rem;
+    line-height:1.42;
+    font-weight:600;
+    margin:0 0 22px;
+  }
+
+  .answers{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+  }
+  .ans-btn{
+    text-align:left;
+    background:#181b1d;
+    border:1px solid var(--card-edge);
+    color:var(--text);
+    padding:14px 16px;
+    border-radius:3px;
+    font-family:'Inter',sans-serif;
+    font-size:.95rem;
+    line-height:1.4;
+    cursor:pointer;
+    transition:border-color .12s ease, background .12s ease;
+    display:flex;
+    gap:12px;
+  }
+  .ans-btn:hover:not(:disabled){border-color:var(--yellow-dim);}
+  .ans-btn:disabled{cursor:default;}
+  .ans-letter{
+    font-family:'IBM Plex Mono',monospace;
+    color:var(--text-dim);
+    flex-shrink:0;
+  }
+  .ans-btn.correct{border-color:var(--green); background:rgba(63,161,121,.12);}
+  .ans-btn.correct .ans-letter{color:var(--green);}
+  .ans-btn.wrong{border-color:var(--red); background:rgba(217,83,79,.12);}
+  .ans-btn.wrong .ans-letter{color:var(--red);}
+
+  .explain{
+    margin-top:18px;
+    padding:14px 16px;
+    background:#181b1d;
+    border-left:3px solid var(--yellow);
+    font-size:.88rem;
+    line-height:1.55;
+    color:var(--text-dim);
+    display:none;
+  }
+  .explain b{color:var(--text);}
+  .explain.show{display:block;}
+
+  .next-row{
+    display:flex;
+    justify-content:flex-end;
+    margin-top:20px;
+  }
+  .next-btn{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:.82rem;
+    letter-spacing:.05em;
+    text-transform:uppercase;
+    background:transparent;
+    border:1px solid var(--yellow);
+    color:var(--yellow);
+    padding:10px 20px;
+    border-radius:2px;
+    cursor:pointer;
+    display:none;
+  }
+  .next-btn.show{display:inline-block;}
+  .next-btn:hover{background:var(--yellow); color:#15181a;}
+
+  /* results */
+  .results{
+    text-align:center;
+    padding:20px 0 10px;
+  }
+  .stamp-wrap{
+    width:220px;
+    height:220px;
+    margin:10px auto 26px;
+    position:relative;
+  }
+  .stamp-score{
+    position:absolute;
+    top:50%;left:50%;
+    transform:translate(-50%,-50%);
+    font-family:'Archivo Black',sans-serif;
+    font-size:2.6rem;
+    color:var(--yellow);
+    line-height:1;
+  }
+  .stamp-score sub{
+    display:block;
+    font-family:'IBM Plex Mono',monospace;
+    font-size:.7rem;
+    color:var(--text-dim);
+    letter-spacing:.1em;
+    margin-top:6px;
+  }
+  .verdict{
+    font-family:'Archivo Black',sans-serif;
+    text-transform:uppercase;
+    font-size:1.3rem;
+    margin:0 0 10px;
+  }
+  .verdict.pass{color:var(--green);}
+  .verdict.fail{color:var(--red);}
+  .verdict-sub{
+    color:var(--text-dim);
+    font-size:.95rem;
+    max-width:440px;
+    margin:0 auto 30px;
+    line-height:1.5;
+  }
+  .btn-row{
+    display:flex;
+    gap:12px;
+    justify-content:center;
+    flex-wrap:wrap;
+  }
+  button.ghost{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:.82rem;
+    letter-spacing:.05em;
+    text-transform:uppercase;
+    background:transparent;
+    border:1px solid var(--card-edge);
+    color:var(--text-dim);
+    padding:12px 22px;
+    border-radius:2px;
+    cursor:pointer;
+  }
+  button.ghost:hover{border-color:var(--yellow); color:var(--yellow);}
+
+  .hidden{display:none;}
+
+  footer{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:.68rem;
+    color:var(--text-dim);
+    text-align:center;
+    margin-top:46px;
+    letter-spacing:.05em;
+  }
+
+  @media (max-width:480px){
+    header.hero{padding:40px 18px 30px;}
+    .card{padding:22px 18px 20px;}
+  }
+</style>
+</head>
+<body>
+
+<div class="hazard-bar"></div>
+
+<header class="hero" id="hero">
+  <div class="eyebrow">Проверка знаний · Госстандарт РБ</div>
+  <h1>СТБ ISO <span>45001</span>-2020</h1>
+  <p class="lede">Системы менеджмента здоровья и безопасности при профессиональной деятельности.
+  Вопросы на знание терминов, структуры разделов и требований стандарта (идентичен ISO 45001:2018),
+  а также экзаменационные вопросы по практике охраны труда.</p>
+  <div class="meta-row">
+    <span>Дата введения: <b>2020-05-01</b></span>
+    <span>Идентичность: <b>ISO 45001:2018, IDT</b></span>
+    <span>Вопросов в тесте: <b id="totalCount">—</b></span>
+  </div>
+  <button class="primary" id="startBtn">Начать тест →</button>
+</header>
+
+<main>
+  <section id="quizSection" class="hidden">
+    <div class="progress-wrap">
+      <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+      <div class="progress-label">
+        <span>ВОПРОС <b id="qNum">01</b> / <span id="qTotal">18</span></span>
+        <span>СЧЁТ: <b id="liveScore">0</b></span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="q-clause" id="qClause">п. 3.6</div>
+      <p class="q-text" id="qText">Текст вопроса</p>
+      <div class="answers" id="answersWrap"></div>
+      <div class="explain" id="explainBox"></div>
+      <div class="next-row"><button class="next-btn" id="nextBtn">Далее →</button></div>
+    </div>
+  </section>
+
+  <section id="resultsSection" class="hidden results">
+    <div class="stamp-wrap">
+      <svg viewBox="0 0 220 220" width="220" height="220">
+        <defs>
+          <path id="circlePath" d="M 110,110 m -92,0 a 92,92 0 1,1 184,0 a 92,92 0 1,1 -184,0"/>
+        </defs>
+        <circle cx="110" cy="110" r="105" fill="none" stroke="#2a2f33" stroke-width="1.5"/>
+        <circle cx="110" cy="110" r="92" fill="none" stroke="#f2c14e" stroke-width="1.5" stroke-dasharray="4 5"/>
+        <text font-family="IBM Plex Mono, monospace" font-size="9.5" letter-spacing="3" fill="#93999e">
+          <textPath href="#circlePath" startOffset="2%">РЕЗУЛЬТАТ ТЕСТИРОВАНИЯ · СТБ ISO 45001-2020 · </textPath>
+        </text>
+      </svg>
+      <div class="stamp-score" id="stampScore">0/18<sub>ВЕРНЫХ ОТВЕТОВ</sub></div>
+    </div>
+    <p class="verdict" id="verdictText">—</p>
+    <p class="verdict-sub" id="verdictSub">—</p>
+    <div class="btn-row">
+      <button class="primary" id="retryBtn">Пройти заново</button>
+      <button class="ghost" id="reviewBtn">Смотреть разбор ошибок</button>
+    </div>
+  </section>
+</main>
+
+<footer>СТБ ISO 45001-2020 (ISO 45001:2018, IDT) + вопросы к экзамену по 45001 (2025) · Учебный тест, не является официальным документом</footer>
+
+<script>
+const QUESTIONS = [
+  {
+    clause: "п. 1 Область применения",
+    text: "Что устанавливает настоящий стандарт?",
+    options: [
+      "Требования к системе менеджмента здоровья и безопасности при профессиональной деятельности (OH&S) и руководство по её применению",
+      "Требования к безопасности продукции для конечных пользователей",
+      "Требования к системе менеджмента качества выпускаемой продукции",
+      "Требования к финансовой отчётности организации"
+    ],
+    correct: 0,
+    explain: "Раздел 1 гласит, что стандарт устанавливает требования к системе менеджмента OH&S и является руководством по её применению; вопросы безопасности продукции и охраны окружающей среды вне связи с рисками для работающих стандарт не рассматривает."
+  },
+  {
+    clause: "п. 3.6",
+    text: "Как в стандарте определяется «рабочее место» (workplace)?",
+    options: [
+      "Любое здание, принадлежащее организации",
+      "Место, находящееся под управлением организации, на котором лицо находится во время работы или куда приходит с намерением работать",
+      "Кабинет высшего руководства организации",
+      "Место проведения внешнего аудита"
+    ],
+    correct: 1,
+    explain: "Определение 3.6: рабочее место — место под управлением организации, где лицо находится во время работы или куда приходит с намерением работать. Обязанности организации по обеспечению такого места зависят от степени управления им."
+  },
+  {
+    clause: "п. 3.19 vs 3.20",
+    text: "В чём принципиальное отличие термина «опасность» (hazard) от термина «риск» (risk) по стандарту?",
+    options: [
+      "Это синонимы, различий нет",
+      "Опасность — это источник потенциальной причины травмы, а риск — это воздействие неопределённости (сочетание вероятности и значимости последствий)",
+      "Опасность относится только к химическим веществам, а риск — ко всем остальным факторам",
+      "Риск устанавливается законом, а опасность — самой организацией"
+    ],
+    correct: 1,
+    explain: "3.19: опасность — источник потенциальной причины травмы и ухудшения состояния здоровья. 3.20: риск — воздействие неопределённости, то есть отклонение от ожидаемого, характеризуемое сочетанием вероятности и последствий."
+  },
+  {
+    clause: "п. 0.4",
+    text: "На какой концепции основан подход системы менеджмента OH&S, применяемый в стандарте?",
+    options: [
+      "SWOT-анализ",
+      "5S",
+      "PDCA (Планируй – Делай – Проверяй – Действуй)",
+      "Диаграмма Исикавы"
+    ],
+    correct: 2,
+    explain: "П. 0.4: подход основан на итеративной концепции «Планируй – Делай – Проверяй – Действуй» (PDCA), которая встроена в структуру стандарта (разделы 6–10)."
+  },
+  {
+    clause: "п. 8.1.2",
+    text: "Какое средство управления риском стоит на первом (наиболее результативном) месте в иерархии средств управления?",
+    options: [
+      "Использование средств индивидуальной защиты (СИЗ)",
+      "Устранение опасности",
+      "Использование административных средств управления",
+      "Замена на менее опасные процессы или материалы"
+    ],
+    correct: 1,
+    explain: "П. 8.1.2 приводит иерархию: a) устранение опасности; b) замена на менее опасное; c) технические/инженерные средства; d) административные средства; e) СИЗ — как наименее результативное средство."
+  },
+  {
+    clause: "п. 3.3, примечание 2",
+    text: "Кого стандарт относит к «работающим» (worker)?",
+    options: [
+      "Только штатных сотрудников с трудовым договором",
+      "Только высшее руководство организации",
+      "Лиц, выполняющих работу или связанную с работой деятельность под управлением организации, включая высшее руководство и остальной персонал",
+      "Только подрядчиков и субподрядчиков"
+    ],
+    correct: 2,
+    explain: "3.3, примечание 2: работающие включают высшее руководство и персонал, являющийся и не являющийся менеджерами, независимо от формы занятости (оплачиваемая/неоплачиваемая, постоянная/временная и т.д.)."
+  },
+  {
+    clause: "п. 5.1",
+    text: "Кто должен демонстрировать лидерство и приверженность по отношению к системе менеджмента OH&S?",
+    options: [
+      "Специалист по охране труда",
+      "Внешний аудитор",
+      "Высшее руководство",
+      "Комиссия по здоровью и безопасности"
+    ],
+    correct: 2,
+    explain: "Раздел 5.1: именно высшее руководство должно демонстрировать лидерство и приверженность, принимая на себя общие обязанности за предупреждение травм и обеспечение безопасных рабочих мест."
+  },
+  {
+    clause: "п. 3.35",
+    text: "Как определяется «инцидент» (incident)?",
+    options: [
+      "Любое отклонение документированной информации от установленного формата",
+      "Происшествие, возникшее в связи с работой или во время работы, которое могло бы привести или в результате привело к травмам и ухудшению состояния здоровья",
+      "Плановая проверка оборудования",
+      "Согласованная с работающими цель в области OH&S"
+    ],
+    correct: 1,
+    explain: "3.35: инцидент — происшествие, связанное с работой, которое могло привести или привело к травме и ухудшению состояния здоровья. Примечание 3 уточняет, что инцидент может возникать и при отсутствии несоответствий."
+  },
+  {
+    clause: "Приложение А.1",
+    text: "Согласно пояснению в приложении А, чем отличаются слова «рассматривать» (consider) и «принимать во внимание» (take into account)?",
+    options:[
+      "Это полные синонимы без различий",
+      "«Рассматривать» означает, что деятельность необходима, но может быть исключена; «принимать во внимание» означает, что деятельность необходима и не может быть исключена",
+      "«Принимать во внимание» относится только к финансовым вопросам",
+      "«Рассматривать» — обязательное требование, а «принимать во внимание» — рекомендация"
+    ],
+    correct: 1,
+    explain: "А.3, пункт b): «рассматривать» (consider) — деятельность необходима, но может быть исключена; «принимать во внимание» (take into account) — деятельность необходима и исключить её нельзя."
+  },
+  {
+    clause: "п. 5.2",
+    text: "Какое из перечисленного НЕ является обязательным элементом политики в области OH&S по п. 5.2?",
+    options:[
+      "Обязательство устранять опасности и снижать риски в области OH&S",
+      "Обязательство выполнять законодательные требования и другие требования",
+      "Обязательство постоянно улучшать систему менеджмента OH&S",
+      "Гарантия полного отсутствия травматизма на производстве"
+    ],
+    correct: 3,
+    explain: "Раздел 0.3 прямо указывает: принятие стандарта само по себе не гарантирует предупреждения травм. Политика включает обязательства по безопасным условиям труда, законодательным требованиям, устранению опасностей и постоянному улучшению — но не «гарантию отсутствия травматизма»."
+  },
+  {
+    clause: "п. 3.29",
+    text: "Что означает термин «передавать на аутсорсинг» (outsource)?",
+    options:[
+      "Увольнять работающих по собственному желанию",
+      "Договариваться о том, что внешняя организация будет выполнять часть функций или процесса организации",
+      "Передавать полномочия внутри организации от одного отдела другому",
+      "Проводить внутренний аудит силами сторонних экспертов"
+    ],
+    correct: 1,
+    explain: "3.29: передавать на аутсорсинг — договариваться о выполнении части функций или процесса организации внешней организацией. При этом переданный процесс остаётся в области применения системы менеджмента (примечание 1)."
+  },
+  {
+    clause: "п. 9.2.1",
+    text: "С какой целью организация должна проводить внутренние аудиты через запланированные интервалы?",
+    options:[
+      "Только для подготовки к внешней сертификации",
+      "Чтобы предоставить информацию о том, соответствует ли система менеджмента OH&S требованиям и результативно ли она внедрена и поддерживается",
+      "Чтобы уволить работающих, не выполняющих план",
+      "Чтобы заменить анализ со стороны руководства"
+    ],
+    correct: 1,
+    explain: "9.2.1: внутренние аудиты проводятся, чтобы дать информацию о соответствии системы собственным требованиям организации и требованиям стандарта, а также о том, результативно ли она внедрена и поддерживается."
+  },
+  {
+    clause: "п. 3.37",
+    text: "Что означает слово «постоянный» применительно к улучшению по данному стандарту (в отличие от «непрерывного»)?",
+    options:[
+      "Деятельность, которая происходит без перерывов, 24 часа в сутки",
+      "Повторяющаяся деятельность по повышению пригодности, которая может проводиться с интервалами остановки, а не обязательно во всех областях одновременно",
+      "Деятельность, проводимая один раз в год во время сертификационного аудита",
+      "Только деятельность высшего руководства"
+    ],
+    correct: 1,
+    explain: "Приложение А.3 a): «постоянный» (continual) указывает на деятельность с интервалами остановки, в отличие от «непрерывного» (continuous), означающего длительность без остановки. Примечание 2 к 3.37 подтверждает: не нужно вести деятельность во всех областях одновременно."
+  },
+  {
+    clause: "п. 5.4",
+    text: "На что организация должна делать акцент при консультациях с работающими, не являющимися менеджерами?",
+    options:[
+      "Только на вопросах заработной платы",
+      "На определении потребностей заинтересованных сторон, установлении политики OH&S, установлении целей и другие перечисленные в 5.4 вопросы",
+      "Только на выборе поставщиков оборудования",
+      "На вопросах, не связанных с системой менеджмента OH&S"
+    ],
+    correct: 1,
+    explain: "5.4 перечисление d): консультации с работающими, не являющимися менеджерами, акцентируются на определении потребностей заинтересованных сторон, политике, ролях и обязанностях, целях OH&S, планировании аудитов и др."
+  },
+  {
+    clause: "п. 2",
+    text: "Сколько нормативных ссылок содержит настоящий стандарт (раздел 2)?",
+    options:[
+      "15 ссылок, перечисленных в библиографии",
+      "Нормативные ссылки отсутствуют",
+      "3 обязательные ссылки на ISO 9001, ISO 14001 и ISO 31000",
+      "Ссылка только на ISO 45001:2018"
+    ],
+    correct: 1,
+    explain: "Раздел 2 прямо гласит: «В настоящем стандарте нормативные ссылки отсутствуют». Перечень документов из библиографии носит справочный, а не нормативный характер."
+  },
+  {
+    clause: "Изменение № 1",
+    text: "Что было добавлено в п. 4.1 стандарта согласно Изменению № 1 (введено 2026-05-01)?",
+    options:[
+      "Требование обязательной сертификации всех подрядчиков",
+      "Абзац о том, что организация должна определить, является ли изменение климата актуальным фактором",
+      "Новый термин «стейкхолдер 2.0»",
+      "Требование о ежедневных медицинских осмотрах работающих"
+    ],
+    correct: 1,
+    explain: "Изменение № 1 дополняет п. 4.1 абзацем: «Организация должна определить, является ли изменение климата актуальным фактором», а п. 4.2 — примечанием о требованиях заинтересованных сторон, связанных с изменением климата."
+  },
+  {
+    clause: "п. 8.1.4.3",
+    text: "Что происходит с обязанностями организации по соответствию требованиям стандарта, если функция или процесс переданы на аутсорсинг?",
+    options:[
+      "Обязанности полностью переходят к внешней организации",
+      "Обязанности по соответствию требованиям настоящего стандарта остаются за организацией",
+      "Обязанности делятся поровну автоматически без каких-либо соглашений",
+      "Стандарт не рассматривает этот вопрос вообще"
+    ],
+    correct: 1,
+    explain: "8.1.4.3: в пределах переданных на аутсорсинг функций и процессов обязанности по соответствию требованиям настоящего стандарта остаются за организацией; она должна обеспечить их управляемость."
+  },
+  {
+    clause: "п. 9.3",
+    text: "Кто должен анализировать систему менеджмента OH&S через запланированные интервалы, чтобы обеспечить её постоянную приемлемость, адекватность и результативность?",
+    options:[
+      "Внешний независимый орган по сертификации",
+      "Высшее руководство",
+      "Любой работающий по собственной инициативе",
+      "Государственный комитет по стандартизации"
+    ],
+    correct: 1,
+    explain: "9.3: анализ со стороны руководства проводит именно высшее руководство организации, рассматривая статус предыдущих действий, изменения контекста, степень выполнения целей, результаты аудитов и др."
+  },
+
+  /* ===== Блок 2: вопросы из экзаменационного документа ===== */
+  {
+    clause: "п. 8.1.4.2",
+    text: "Для чего организация должна координировать процесс закупок со своими подрядчиками?",
+    options: [
+      "Для постоянного улучшения имиджа организации",
+      "Для идентификации опасностей и для оценки и управления рисками в области OH&S",
+      "Только для снижения закупочной цены",
+      "Все перечисленное верно"
+    ],
+    correct: 1,
+    explain: "8.1.4.2: организация должна координировать свой процесс(ы) закупок со своими подрядчиками для идентификации опасностей и для оценки и управления рисками в области OH&S, связанными с их деятельностью."
+  },
+  {
+    clause: "п. 7.4.1",
+    text: "Должна ли организация осуществлять мониторинг результатов своих усилий в области коммуникаций через запланированные интервалы?",
+    options: [
+      "Да, это прямое требование стандарта",
+      "Стандарт не устанавливает такого требования",
+      "Только при наличии предписания надзорного органа",
+      "Да, но не реже одного раза в год"
+    ],
+    correct: 1,
+    explain: "Раздел 7.4 устанавливает требования к процессу(ам) коммуникаций (о чём, когда, с кем и как сообщать), но отдельного требования именно к периодическому мониторингу результатов усилий в области коммуникаций стандарт не содержит."
+  },
+  {
+    clause: "п. 8.2",
+    text: "Для подготовки к потенциальным чрезвычайным ситуациям и реагирования на них организация должна:",
+    options: [
+      "Только устанавливать необходимые процессы",
+      "Устанавливать, внедрять и поддерживать необходимые процессы",
+      "Постоянно улучшать процессы, но не обязана их поддерживать",
+      "Передать эту функцию исключительно службам МЧС"
+    ],
+    correct: 1,
+    explain: "8.2: организация должна устанавливать, внедрять и поддерживать процесс(ы), необходимый(е) для подготовки к потенциальным чрезвычайным ситуациям и реагирования на них."
+  },
+  {
+    clause: "п. 7.2",
+    text: "Какие требования установлены стандартом к компетентности работающих?",
+    options: [
+      "Организация должна обеспечить обязательную аттестацию всех работающих по СТБ ISO 45001",
+      "Определить необходимую компетентность, обеспечить, чтобы работающие ею обладали, и осуществлять действия по её приобретению/поддержанию с оценкой результативности",
+      "Компетентность должна подтверждаться исключительно дипломом о высшем образовании",
+      "Требования к компетентности устанавливает только служба охраны труда"
+    ],
+    correct: 1,
+    explain: "7.2: организация должна определить необходимую компетентность работающих, обеспечить, чтобы они ею обладали (на основе образования, подготовки или опыта), и оценивать результативность предпринятых действий. Требования о периодическом тестировании знаний именно текста стандарта в 7.2 нет."
+  },
+  {
+    clause: "п. 6.2.2",
+    text: "Каким образом должна сохраняться информация о целях в области OH&S и планах их достижения?",
+    options: [
+      "В виде документированной информации",
+      "Достаточно устного информирования на совещании",
+      "В виде документированной информации только по запросу инспектора труда",
+      "Стандарт не требует сохранять такую информацию"
+    ],
+    correct: 0,
+    explain: "6.2.2: организация должна поддерживать и сохранять документированную информацию о целях в области OH&S и планах их достижения."
+  },
+  {
+    clause: "п. 3.30",
+    text: "К какому термину относится определение «Определение статуса системы, процесса или деятельности»?",
+    options: [
+      "Верификация",
+      "Мониторинг",
+      "Измерение",
+      "Аудит"
+    ],
+    correct: 1,
+    explain: "3.30: мониторинг (monitoring) — определение статуса системы, процесса или деятельности. Измерение (3.31) — это процесс определения значения, а не статуса."
+  },
+  {
+    clause: "п. 6.1.2.2",
+    text: "От чего должны зависеть методология и критерии организации для оценки рисков в области OH&S?",
+    options: [
+      "Только от размера организации",
+      "От их области распространения, характера и времени",
+      "Только от требований заказчика",
+      "Методология не подлежит документированию"
+    ],
+    correct: 1,
+    explain: "6.1.2.2: методология и критерии оценки рисков должны быть определены в зависимости от их области распространения, характера и времени, чтобы быть проактивными, а не реактивными."
+  },
+  {
+    clause: "п. 5.1 к) / А.5.1",
+    text: "Организации следует обеспечить, чтобы работающие всех уровней:",
+    options: [
+      "Только сообщали об опасностях руководству в письменном виде",
+      "Поощрялись за сообщение об инцидентах и опасностях и не опасались угрозы увольнения или дисциплинарных мер",
+      "Несли материальную ответственность за выявленные опасности",
+      "Сообщали об опасностях исключительно через комиссию по охране труда"
+    ],
+    correct: 1,
+    explain: "5.1 к) и приложение А.5.1: высшее руководство должно защищать работающих от наказаний при сообщении об инцидентах, опасностях, рисках и возможностях, и поощрять такие сообщения."
+  },
+  {
+    clause: "п. 9.2.1",
+    text: "Организация должна проводить внутренние аудиты через запланированные интервалы для предоставления информации о том, что СМ OH&S соответствует:",
+    options: [
+      "Только требованиям СТБ ISO 45001",
+      "Требованиям организации к своей системе менеджмента (включая политику и цели) и требованиям настоящего стандарта",
+      "Только требованиям, установленным заказчиком продукции",
+      "Только законодательным требованиям Республики Беларусь"
+    ],
+    correct: 1,
+    explain: "9.2.1: аудиты дают информацию о том, соответствует ли СМ OH&S требованиям организации (включая политику и цели в области OH&S) и требованиям настоящего стандарта."
+  },
+  {
+    clause: "п. 9.1.1",
+    text: "Организация должна обеспечить, чтобы оборудование для мониторинга и измерений было:",
+    options: [
+      "Только откалибровано, без дальнейшего обслуживания",
+      "Откалибровано или верифицировано (если применимо), а также использовалось и поддерживалось в соответствующих случаях",
+      "Сертифицировано производителем один раз при покупке",
+      "Валидировано программным обеспечением поставщика"
+    ],
+    correct: 1,
+    explain: "9.1.1: оборудование для мониторинга и измерения должно быть откалибровано или верифицировано, если применимо, а также использоваться и поддерживаться в соответствующих случаях."
+  },
+  {
+    clause: "п. 6.1.1",
+    text: "При определении рисков и возможностей СМ OH&S и намеченных выходов, которые необходимо рассмотреть, организация должна принимать во внимание:",
+    options: [
+      "Только опасности и контекст организации",
+      "Опасности; риски в области OH&S и другие риски; возможности в области OH&S и другие возможности; законодательные требования и другие требования",
+      "Только законодательные требования и другие требования",
+      "Опасности, риски, возможности, законодательные требования и, дополнительно, контекст организации"
+    ],
+    correct: 1,
+    explain: "6.1.1: организация должна принимать во внимание опасности (см. 6.1.2.1), риски в области OH&S и другие риски (см. 6.1.2.2), возможности в области OH&S и другие возможности (см. 6.1.2.3) и законодательные требования и другие требования (см. 6.1.3). Контекст организации (4.1) в этот перечень отдельно не включён — он уже учтён на более раннем этапе планирования."
+  },
+  {
+    clause: "Прил. А.9.1.1",
+    text: "С чем организация может сравнивать (использовать как бенчмарк) пригодность своей деятельности?",
+    options: [
+      "Только с показателями конкурентов",
+      "С другими организациями; стандартами и кодексами; собственными кодексами и целями организации; статистикой OH&S",
+      "Только со статистикой Госстандарта",
+      "С другими организациями, стандартами и кодексами и, дополнительно, внутренними документами своей СМ OH&S"
+    ],
+    correct: 1,
+    explain: "Приложение А.9.1.1 приводит четыре примера бенчмарков: i) другие организации; ii) стандарты и кодексы; iii) собственные кодексы организации и цели организации; iv) статистика OH&S. Внутренние документы собственной СМ OH&S в этот перечень не входят — сравнивать пригодность нужно с внешними или целевыми ориентирами, а не с собственной документацией."
+  },
+  {
+    clause: "п. 6.1.4 / А.6.1.4",
+    text: "Менеджмент запланированных действий следует интегрировать с другими бизнес-процессами, такими как процессы менеджмента:",
+    options: [
+      "Только качества",
+      "Окружающей среды, качества, непрерывности бизнеса, рисков, финансовых или человеческих ресурсов",
+      "Только финансовых ресурсов",
+      "Интеграция с другими процессами не рекомендуется"
+    ],
+    correct: 1,
+    explain: "Приложение А.6.1.4: менеджмент запланированных действий следует интегрировать в первую очередь через систему менеджмента OH&S и с другими бизнес-процессами — окружающей среды, качества, непрерывности бизнеса, рисков, финансовых или человеческих ресурсов."
+  },
+  {
+    clause: "п. 6.2.1",
+    text: "С чем, согласно СТБ ISO 45001, должны быть согласованы цели в области OH&S?",
+    options: [
+      "С политикой в области OH&S",
+      "Исключительно с бюджетом организации на текущий год",
+      "С мнением внешнего аудитора",
+      "С показателями конкурирующих организаций"
+    ],
+    correct: 0,
+    explain: "6.2.1 a): цели в области OH&S должны быть согласованными с политикой в области OH&S."
+  },
+  {
+    clause: "п. 9.2 / ISO 19011",
+    text: "Устанавливает ли СТБ ISO 45001 требования к компетентности внутренних аудиторов?",
+    options: [
+      "Нет, стандарт не устанавливает таких требований",
+      "Да, аудитор обязан иметь профильное высшее образование",
+      "Да, стандарт требует ежегодной аттестации аудиторов",
+      "Да, но только для организаций с численностью более 250 человек"
+    ],
+    correct: 0,
+    explain: "Сам СТБ ISO 45001 не устанавливает специфических требований к компетентности внутренних аудиторов; за дополнительными указаниями стандарт отсылает к ISO 19011 (см. примечание к 9.2.2)."
+  },
+  {
+    clause: "п. 1",
+    text: "Что из перечисленного рассматривает СТБ ISO 45001?",
+    options: [
+      "Безопасность продукции для конечных пользователей",
+      "Опасности для работающих, возникающие во время изготовления, установки, сборки или испытаний продукции",
+      "Ущерб имуществу вне связи с рисками для работающих",
+      "Воздействие на окружающую среду вне связи с рисками для работающих"
+    ],
+    correct: 1,
+    explain: "Раздел 1: стандарт не рассматривает вопросы безопасности продукции для конечных пользователей, ущерб имуществу или воздействие на окружающую среду вне связи с рисками для работающих — но рассматривает опасности, возникающие для работающих в процессе изготовления, установки, сборки и испытаний продукции."
+  },
+  {
+    clause: "п. 1",
+    text: "Что устанавливает стандарт СТБ ISO 45001 в отношении системы менеджмента OH&S?",
+    options: [
+      "Только требования",
+      "Только рекомендации",
+      "Требования и рекомендации",
+      "Только критерии пригодности в области OH&S"
+    ],
+    correct: 2,
+    explain: "По экзаменационному вопросу верный ответ — «требования и рекомендации»: раздел 1 стандарта устанавливает обязательные требования («должен»), а приложение А и отдельные положения со словом «следует» дают именно рекомендации — стандарт сочетает оба типа положений."
+  },
+  {
+    clause: "п. 9.2.2, примечание",
+    text: "Является ли обязательным применение и соблюдение СТБ ISO 19011 при проведении внутренних аудитов?",
+    options: [
+      "Да, всегда, без исключений",
+      "Нет — по умолчанию не обязательно, но становится обязательным, если организация сама проводит аудиты по ISO 19011 или закрепила это в документах СМ OH&S",
+      "Да, но только для организаций с сертификатом ISO 9001",
+      "Да, но только для государственных организаций"
+    ],
+    correct: 1,
+    explain: "Примечание к 9.2.2 отсылает к ISO 19011 как к справочному руководству. Само по себе применение ISO 19011 не обязательно, но становится обязывающим, если организация проводит аудиты в соответствии с его положениями или установила это в своей документированной информации."
+  },
+  {
+    clause: "Локальные требования ОТ",
+    text: "Кто может проводить стажировку на рабочем месте и каким должен быть минимальный стаж такого лица?",
+    options: [
+      "Любой сотрудник вне зависимости от стажа",
+      "Уполномоченное лицо (руководитель подразделения) со стажем работы по профессии не менее 3 лет",
+      "Только сторонний эксперт по договору",
+      "Стажировку обязан проводить только директор организации"
+    ],
+    correct: 1,
+    explain: "Стажировку на рабочем месте проводит уполномоченное лицо — как правило, руководитель подразделения — со стажем работы по соответствующей профессии (специальности) не менее 3 лет."
+  },
+  {
+    clause: "Локальные требования ОТ",
+    text: "Как часто должны пересматриваться инструкции по охране труда?",
+    options: [
+      "Ежегодно для всех без исключения видов работ",
+      "На работы с повышенной опасностью — не реже 1 раза в 3 года, на остальные — не реже 1 раза в 5 лет",
+      "Раз в 10 лет независимо от вида работ",
+      "Пересмотр не требуется при отсутствии несчастных случаев"
+    ],
+    correct: 1,
+    explain: "Инструкции по охране труда пересматриваются не реже одного раза в 3 года для работ с повышенной опасностью и не реже одного раза в 5 лет — для остальных видов работ."
+  },
+  {
+    clause: "Локальные требования ОТ",
+    text: "Как часто испытываются металлические лестницы-стремянки?",
+    options: [
+      "Не реже 1 раза в год",
+      "Не реже 1 раза в 3 года",
+      "Только перед первым вводом в эксплуатацию",
+      "Не реже 1 раза в 6 месяцев"
+    ],
+    correct: 0,
+    explain: "Металлические лестницы-стремянки подлежат периодическим испытаниям не реже одного раза в год."
+  },
+  {
+    clause: "Локальные требования ОТ",
+    text: "Какая информация должна быть указана на бирке лестницы-стремянки?",
+    options: [
+      "Только наименование организации-владельца",
+      "Инвентарный номер, дата очередного испытания и принадлежность подразделению",
+      "ФИО лица, ответственного за хранение, и его подпись",
+      "Только дата изготовления лестницы"
+    ],
+    correct: 1,
+    explain: "На бирке лестницы-стремянки указываются инвентарный номер, дата следующего испытания и принадлежность конкретному подразделению."
+  },
+  {
+    clause: "Предисловие, п. 5",
+    text: "Что подразумевает слово «Следует» (should) при использовании в тексте стандарта?",
+    options: [
+      "Требование",
+      "Рекомендацию",
+      "Наличие разрешения",
+      "Наличие возможности или способности"
+    ],
+    correct: 1,
+    explain: "Предисловие, п. 5: «должен» (shall) — требование; «следует» (should) — рекомендация; «могло бы» (may) — разрешение; «может» (can) — возможность или способность."
+  },
+  {
+    clause: "Приложение А",
+    text: "Чем является приложение А к стандарту?",
+    options: [
+      "Обязательными дополнительными требованиями",
+      "Справочным руководством для понимания требований стандарта",
+      "Перечнем нормативных ссылок",
+      "Библиографией использованных источников"
+    ],
+    correct: 1,
+    explain: "Приложение А (справочное) содержит пояснительную информацию, предназначенную для предотвращения неправильного толкования требований стандарта, но не добавляет, не исключает и не изменяет сами требования."
+  },
+  {
+    clause: "Локальные требования ОТ",
+    text: "В каких случаях работающему нужно проходить стажировку на рабочем месте?",
+    options: [
+      "При любом переводе на новую должность независимо от условий труда",
+      "При переводе на работы с повышенной опасностью или на опасные производственные объекты, если перерыв в работе составил более 1 года",
+      "Только при первичном трудоустройстве в организацию",
+      "Стажировка не требуется, если у работающего есть профильный диплом"
+    ],
+    correct: 1,
+    explain: "Стажировка на рабочем месте требуется при переводе работающего на работы с повышенной опасностью или на опасные производственные объекты, если перерыв в его работе по данной профессии превысил 1 год."
+  },
+  {
+    clause: "Прил. А.5.1",
+    text: "Чем характеризуется лидерство и приверженность высшего руководства согласно приложению А?",
+    options: [
+      "Только формальным утверждением политики в области OH&S",
+      "Осведомлённостью, оперативностью реагирования, активной поддержкой и обратной связью",
+      "Исключительно объёмом выделенного финансирования",
+      "Частотой проведения внутренних аудитов"
+    ],
+    correct: 1,
+    explain: "Приложение А.5.1: лидерство и приверженность высшего руководства, включая осведомлённость, оперативность реагирования, активную поддержку и обратную связь, имеют решающее значение для успеха системы менеджмента OH&S."
+  },
+
+  /* ===== Блок 3: добавлено из обновлённого экзаменационного документа ===== */
+  {
+    clause: "Локальные требования ОТ",
+    text: "Как определяется «опасный производственный фактор»?",
+    options: [
+      "Любой фактор, зафиксированный в инструкции по охране труда",
+      "Производственный фактор, воздействие которого на работающего в определённых условиях способно привести к травме, другому внезапному резкому ухудшению здоровья либо к смерти",
+      "Фактор, который можно устранить только путём остановки производства",
+      "Фактор, учитываемый исключительно при расследовании несчастных случаев"
+    ],
+    correct: 1,
+    explain: "Опасный производственный фактор — производственный фактор, воздействие которого на работающего в производственном процессе в определённых условиях способно привести к травме или другому внезапному резкому ухудшению здоровья либо к смерти."
+  },
+  {
+    clause: "Локальные требования ОТ",
+    text: "Кто разрабатывает инструкции по охране труда?",
+    options: [
+      "Инженер по охране труда",
+      "Руководители структурных подразделений",
+      "Лицо, назначенное приказом нанимателя из числа рядовых работников",
+      "Только профсоюзный комитет организации"
+    ],
+    correct: 1,
+    explain: "Инструкции по охране труда разрабатывают руководители структурных подразделений — именно они отвечают за содержание инструкций по направлениям своей деятельности; инженер по ОТ обычно координирует и согласовывает этот процесс, но не является их разработчиком."
+  },
+  {
+    clause: "Прил. А.4.2",
+    text: "Кого, согласно приложению А.4.2, стандарт относит к заинтересованным сторонам в дополнение к работающим?",
+    options: [
+      "Только законодательные и регулирующие органы",
+      "Законодательные/регулирующие органы, вышестоящие организации, подрядчиков, представителей работающих, профсоюзы и работодателей, а также широкую общественность, СМИ и другие организации",
+      "Только акционеров и владельцев организации",
+      "Только организации, оказывающие медицинские услуги"
+    ],
+    correct: 1,
+    explain: "Приложение А.4.2 приводит широкий перечень заинтересованных сторон: законодательные и регулирующие органы, вышестоящие организации, поставщиков/подрядчиков/субподрядчиков, представителей работающих, профсоюзы и организации работодателей, владельцев, акционеров, клиентов, местное население, а также организации здравоохранения, СМИ, научные круги, бизнес-ассоциации, НПО и специалистов по безопасности и здоровью."
+  },
+  {
+    clause: "Локальные требования ОТ",
+    text: "Должны ли средства индивидуальной защиты (СИЗ) предоставляться работающим бесплатно?",
+    options: [
+      "Нет, СИЗ работающие приобретают за свой счёт",
+      "Да — во многих странах законодательные и другие требования включают требование о бесплатном предоставлении СИЗ работающим",
+      "Да, но только для руководителей структурных подразделений",
+      "Вопрос оплаты СИЗ не относится к области охраны труда"
+    ],
+    correct: 1,
+    explain: "Примечание к стандарту указывает: во многих странах законодательные и другие требования включают требование о том, чтобы средства индивидуальной защиты (СИЗ) предоставлялись работающим бесплатно."
+  },
+  {
+    clause: "Локальные требования ОТ",
+    text: "Что приравнивается к работам на высоте?",
+    options: [
+      "Подъём работающего на высоту более 5 м и его спуск с высоты более 5 м по лестнице с углом наклона к горизонтали более 75°",
+      "Любая работа, выполняемая на втором этаже здания и выше",
+      "Подъём на высоту более 1,8 м без ограждения",
+      "Работа на приставной лестнице независимо от высоты подъёма"
+    ],
+    correct: 0,
+    explain: "К работам на высоте приравниваются подъём работающего на высоту более 5 м и его спуск с высоты более 5 м по лестнице, угол наклона которой к горизонтальной поверхности составляет более 75°."
+  }
+];
+
+let current = 0;
+let score = 0;
+let answered = [];       // {correct: bool}
+let selectedIndex = null;
+let quizQuestions = QUESTIONS;   // working (shuffled) copy used during a run
+
+function shuffle(arr){
+  const a = arr.slice();
+  for(let i = a.length - 1; i > 0; i--){
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+const hero = document.getElementById('hero');
+const quizSection = document.getElementById('quizSection');
+const resultsSection = document.getElementById('resultsSection');
+const qNum = document.getElementById('qNum');
+const qTotal = document.getElementById('qTotal');
+const qClause = document.getElementById('qClause');
+const qText = document.getElementById('qText');
+const answersWrap = document.getElementById('answersWrap');
+const explainBox = document.getElementById('explainBox');
+const nextBtn = document.getElementById('nextBtn');
+const progressFill = document.getElementById('progressFill');
+const liveScore = document.getElementById('liveScore');
+
+qTotal.textContent = QUESTIONS.length;
+document.getElementById('totalCount').textContent = QUESTIONS.length;
+
+document.getElementById('startBtn').addEventListener('click', () => {
+  quizQuestions = shuffle(QUESTIONS);
+  hero.classList.add('hidden');
+  quizSection.classList.remove('hidden');
+  renderQuestion();
+});
+
+function renderQuestion(){
+  const q = quizQuestions[current];
+  qNum.textContent = String(current+1).padStart(2,'0');
+  qClause.textContent = q.clause;
+  qText.textContent = q.text;
+  liveScore.textContent = score;
+  progressFill.style.width = ((current)/quizQuestions.length*100) + '%';
+  explainBox.classList.remove('show');
+  explainBox.innerHTML = '';
+  nextBtn.classList.remove('show');
+  answersWrap.innerHTML = '';
+
+  const letters = ['A','B','C','D','E'];
+  q.options.forEach((opt, idx) => {
+    const btn = document.createElement('button');
+    btn.className = 'ans-btn';
+    btn.innerHTML = `<span class="ans-letter">${letters[idx]}</span><span>${opt}</span>`;
+    btn.addEventListener('click', () => selectAnswer(idx));
+    answersWrap.appendChild(btn);
+  });
+}
+
+function selectAnswer(idx){
+  const q = quizQuestions[current];
+  const buttons = answersWrap.querySelectorAll('.ans-btn');
+  buttons.forEach(b => b.disabled = true);
+
+  const isCorrect = idx === q.correct;
+  buttons[idx].classList.add(isCorrect ? 'correct' : 'wrong');
+  if(!isCorrect){
+    buttons[q.correct].classList.add('correct');
+  }
+  if(isCorrect) score++;
+
+  answered.push({correct: isCorrect, q: q});
+  liveScore.textContent = score;
+
+  explainBox.innerHTML = `<b>Пояснение:</b> ${q.explain}`;
+  explainBox.classList.add('show');
+  nextBtn.classList.add('show');
+}
+
+nextBtn.addEventListener('click', () => {
+  current++;
+  if(current < quizQuestions.length){
+    renderQuestion();
+  } else {
+    showResults();
+  }
+});
+
+function showResults(){
+  progressFill.style.width = '100%';
+  quizSection.classList.add('hidden');
+  resultsSection.classList.remove('hidden');
+
+  document.getElementById('stampScore').innerHTML =
+    `${score}/${quizQuestions.length}<sub>ВЕРНЫХ ОТВЕТОВ</sub>`;
+
+  const pct = score / quizQuestions.length;
+  const verdict = document.getElementById('verdictText');
+  const verdictSub = document.getElementById('verdictSub');
+
+  if(pct >= 0.85){
+    verdict.textContent = 'Аттестован';
+    verdict.className = 'verdict pass';
+    verdictSub.textContent = 'Отличное знание требований СТБ ISO 45001-2020: терминологии, структуры разделов и иерархии средств управления рисками.';
+  } else if(pct >= 0.6){
+    verdict.textContent = 'Требуется доработка';
+    verdict.className = 'verdict pass';
+    verdictSub.textContent = 'Базовое понимание стандарта есть, но стоит повторить разделы 3 (термины) и 8 (операционная деятельность).';
+  } else {
+    verdict.textContent = 'Не аттестован';
+    verdict.className = 'verdict fail';
+    verdictSub.textContent = 'Рекомендуется заново изучить разделы 3–10 стандарта, особенно термины и иерархию средств управления опасностями.';
+  }
+}
+
+document.getElementById('retryBtn').addEventListener('click', () => {
+  current = 0; score = 0; answered = [];
+  quizQuestions = shuffle(QUESTIONS);
+  resultsSection.classList.add('hidden');
+  quizSection.classList.remove('hidden');
+  renderQuestion();
+});
+
+document.getElementById('reviewBtn').addEventListener('click', () => {
+  const wrong = answered.filter(a => !a.correct);
+  if(wrong.length === 0){
+    alert('Все ответы верны — ошибок для разбора нет!');
+    return;
+  }
+  let msg = 'Вопросы с ошибками:\n\n';
+  wrong.forEach((w,i) => {
+    msg += `${i+1}. [${w.q.clause}] ${w.q.text}\nПравильный ответ: ${w.q.options[w.q.correct]}\n\n`;
+  });
+  alert(msg);
+});
+</script>
+
+</body>
+</html>
