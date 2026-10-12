@@ -1042,10 +1042,11 @@ const QUESTIONS = [
   {
     clause: "Экзаменационный вопрос №35",
     text: "Какие характеристики системы менеджмента OH&S подлежат постоянному улучшению (повышению)?",
-    options: ["эффективность","результативность","приемлемость","адекватность","все вышеперечисленное","варианты а, б","варианты б – д"],
+    options: ["эффективность","результативность","приемлемость","адекватность","все вышеперечисленное","варианты a, b","варианты b – d"],
     correct: 6,
     noShuffle: true,
-    explain: "Правильный вариант: «варианты б – д» — результативность, приемлемость и адекватность."
+    latinLetters: true,
+    explain: "Правильный вариант: «варианты b – d» — результативность, приемлемость и адекватность."
   },
 ];
 
@@ -1120,7 +1121,7 @@ function renderQuestion(){
 
   // Same letter sequence the source exam document uses (а, б, с, д, е, ф, ж, ш),
   // so references like "варианты а, б" line up with the letters shown on screen.
-  const letters = ['А','Б','С','Д','Е','Ф','Ж','Ш'];
+  const letters = q.latinLetters ? ['A','B','C','D','E','F','G','H'] : ['А','Б','С','Д','Е','Ф','Ж','Ш'];
   q.options.forEach((opt, idx) => {
     const btn = document.createElement('button');
     btn.className = 'ans-btn';
